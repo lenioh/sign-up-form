@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    
+    
+    <body>
+        <div class="bg-image">
+            <div class="logo">
+                <img src="logo.png" alt="" srcset="">
+                <p>Lorem</p>
+            </div>
+            <div class="image-source">
+                Photo by Eugene Golovesov on Unsplash
+            </div>
+        </div>
+        
+        <div class="info-panel">
+            <div class="introduction">
+
+            </div>
+            <form action="" method="post">
+                <ul>
+                    <li>
+                      <label for="firstname">First Name:</label>
+                      <input type="text" id="firstname" name="first_name" minlength="2" placeholder="Bobby" required />
+                    </li>
+                    <li>
+                      <label for="lastname">Last Name:</label>
+                      <input type="text" id="lastname" name="last_name" minlength="2" placeholder="Ragevortex" required />
+                    </li>
+                    <li>
+                        <!-- solve only number later -->
+                        <label for="phone">Phone number:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="+36 40 510 55 91" maxlength="12" required />
+                    </li>
+                    <li>
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" name="user_email" placeholder="bobbyragevortex@themail.com" required/>
+                    </li>
+                    <li>
+                        <!-- solve password check later -->
+                        <label for="pass">Password:</label>
+                        <input type="password" id="pass" name="password"
+                               minlength="8" required>
+                    </li>
+                    <li>
+                        <label for="pass-again">Password again:</label>
+                        <input type="password" id="pass-again" name="password-again"
+                               minlength="8" required>
+                        <span class="pass-error"></span>
+                    </li>
+                    <li class="button">
+                      <button type="submit">Register</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: 'Roboto', sans-serif;
+    height: 100dvh;
+    background-color: rgb(166, 129, 175);
+}
+
+body {
+    margin: auto;
+    height: 500px;
+    width: 900px;
+    display: flex;
+    margin-top: 100px;
+    background-color: rgb(231, 202, 239);
+    border-radius: 16px;
+}
+
+.bg-image {
+    background-image: url(signup-pic.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px 0 0 16px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+}
+
+input {
+    max-width: 35ch;
+    background-color: rgb(240, 227, 243);
+    border-radius: 6px;
+    border: 0;
+    padding: 6px;
+    margin-top: 6px;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    row-gap: 16px;
+}
+
+.info-panel {
+    margin: auto;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+label {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+button {
+    padding: 10px 25px;
+    border-radius: 8px;
+    background-color: rgb(231, 202, 239);
+    border: 1px solid rgb(240, 227, 243);
+    max-width: max-content;
+}
+
+button:hover {
+    background-color: rgb(166, 129, 175);
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    max-height: fit-content;
+    font-size: 40px;
+    color: rgb(240, 227, 243);
+    margin-top: 35%;
+    justify-content: center;
+}
+
+.logo img {
+    height: 40px;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+.image-source {
+    margin-bottom: 2px;
+    color: rgb(240, 227, 243);
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+    text-align: center;
+    align-items: end;
+}
+
+.error {
+    width: 35ch;
+    padding: 0;
+
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+
+    box-sizing: border-box;
+}
+
+.error.active {
+    padding: 0.3em;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        width: fit-content;
+    }
+    ul {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        row-gap: 16px;
+    }
+    
+}
